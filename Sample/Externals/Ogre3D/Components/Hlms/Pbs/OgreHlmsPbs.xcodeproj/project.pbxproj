@@ -1,0 +1,1107 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2192B09D8B8741C2875AD282 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D7D128134B6B4A95BBCD8A76 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				5C41C2E6C93B4529821E2CAB /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		89E77DA57615408A875A62FF /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BFD5AC0E4339457282CEFF9A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				CDC866BCC22146F780060A1C /* CMake Rules */,
+			);
+			dependencies = (
+				A034EA0220F7490CB96BD047 /* PBXTargetDependency */,
+				53862DC6EE1C4F40B3C6ABC3 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		DE469D78F43D433A8DAB040F /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 849FADF10A71412685107293 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				F4D7EC719FAC448FAF6C620E /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				2CAB938841414C0B893EAC63 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		E0D1A131365048019A21F393 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D25449FF352A4E508491C6E6 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				0D2B4CF8B4AC4259B98FFAFE /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				112E837231D2438B95301210 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0DF82F7B015042669FCCCDEA /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Common/include/OgreHlmsBufferManager.h */ = {isa = PBXBuildFile; fileRef = 50199074C8884BE681F3BE16 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Common/include/OgreHlmsBufferManager.h */; };
+		1A2D516C5C1E4FECA8DFC3B4 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/Cubemaps/OgreCubemapProbe.cpp */ = {isa = PBXBuildFile; fileRef = 44D7A167A2C24ABA923B5E04 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/Cubemaps/OgreCubemapProbe.cpp */; };
+		2154AE47868445F5A7676CF0 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/Cubemaps/OgreParallaxCorrectedCubemap.cpp */ = {isa = PBXBuildFile; fileRef = 3DE6779B5B1D40F6A1314D05 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/Cubemaps/OgreParallaxCorrectedCubemap.cpp */; };
+		3AEE72EA838A42018D7B2EB1 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/InstantRadiosity/OgreInstantRadiosity.h */ = {isa = PBXBuildFile; fileRef = CB95F37F0CA448138CAD70AE /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/InstantRadiosity/OgreInstantRadiosity.h */; };
+		4C3831B62D08496B97F4B4C5 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/Cubemaps/OgreParallaxCorrectedCubemap.h */ = {isa = PBXBuildFile; fileRef = 198A5AE494F2415282E2BC45 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/Cubemaps/OgreParallaxCorrectedCubemap.h */; };
+		5AF921A75EAC43C4B23FA98F /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreHlmsJsonPbs.cpp */ = {isa = PBXBuildFile; fileRef = 29AFE543858E49D88C7E739A /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreHlmsJsonPbs.cpp */; };
+		65985A05DA894C44822CFBF8 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/Cubemaps/OgreCubemapProbe.h */ = {isa = PBXBuildFile; fileRef = 2A902C2602DE41C0B892DCF3 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/Cubemaps/OgreCubemapProbe.h */; };
+		80FB5A6CF885454197553CB5 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreHlmsPbs.cpp */ = {isa = PBXBuildFile; fileRef = 26BC45F4AADC47CC9607312F /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreHlmsPbs.cpp */; };
+		9B94B811F06C45E8A041642A /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreHlmsPbs.h */ = {isa = PBXBuildFile; fileRef = 39404F016FA543EE948191D5 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreHlmsPbs.h */; };
+		A50F1E756F4243BA8268D28D /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/InstantRadiosity/OgreInstantRadiosity.cpp */ = {isa = PBXBuildFile; fileRef = D8357B876B52408280232558 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/InstantRadiosity/OgreInstantRadiosity.cpp */; };
+		AC06049E863144FCA4ACB4C8 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreIrradianceVolume.h */ = {isa = PBXBuildFile; fileRef = 02D8E4D81ACD478F82F57EBD /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreIrradianceVolume.h */; };
+		BEBD0D2B1EEE4BF6A925E8DA /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreHlmsPbsDatablock.h */ = {isa = PBXBuildFile; fileRef = AEDA806A08714DD1BA2EE0C7 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreHlmsPbsDatablock.h */; };
+		D7584A91CA8B4C5695A8628E /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreHlmsJsonPbs.h */ = {isa = PBXBuildFile; fileRef = 9CEB9C2A516B496C99B474DF /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreHlmsJsonPbs.h */; };
+		E0F27C2F898E43AAA91EAD9C /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreHlmsPbsDatablock.cpp */ = {isa = PBXBuildFile; fileRef = D75E83677DA2485D843F7DC3 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreHlmsPbsDatablock.cpp */; };
+		E6D302D5B29B437381E94371 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Common/src/OgreHlmsBufferManager.cpp */ = {isa = PBXBuildFile; fileRef = D694E1B842A34340A2AAB00D /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Common/src/OgreHlmsBufferManager.cpp */; };
+		EB7B2DD55E2848819852F9C3 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreHlmsPbsPrerequisites.h */ = {isa = PBXBuildFile; fileRef = 2BDC83A9DB734A3592AEB6B6 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreHlmsPbsPrerequisites.h */; };
+		F83E6860D47C4DDD9187D62A /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = A3C572C7BF7C4CA99BC09452 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/CMakeLists.txt */; };
+		FD8E6FC3D896425A9ABF6FC2 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreIrradianceVolume.cpp */ = {isa = PBXBuildFile; fileRef = 34317CBEE4D94945ABB866CD /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreIrradianceVolume.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		02672BADBFFC46D78A27682A /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		050528E2532D4C66A51862A3 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		3C06FD1846334910A7888698 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		EE591F464D884C1FB4FFD6E1 = {
+			isa = PBXBuildStyle;
+		};
+		F7025F73750647F29651C867 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		08B5D0C27BD04E6E87BA1984 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E735FD6F0D9F46E8B6485605 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA65DB270A6E49DF969A3CA4;
+			remoteInfo = OgreHlmsPbs;
+		};
+		0CA5094DD3BA43C5BA4DFF39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E735FD6F0D9F46E8B6485605 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2192B09D8B8741C2875AD282;
+			remoteInfo = ZERO_CHECK;
+		};
+		9673C5CE781245C8990ED6C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E735FD6F0D9F46E8B6485605 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89E77DA57615408A875A62FF;
+			remoteInfo = ALL_BUILD;
+		};
+		B23BBA67FFA04107A79DCDE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E735FD6F0D9F46E8B6485605 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89E77DA57615408A875A62FF;
+			remoteInfo = ALL_BUILD;
+		};
+		EDF02F42B13B452C8671E92B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E735FD6F0D9F46E8B6485605 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2192B09D8B8741C2875AD282;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02AE22F5DA1344D4B93B049E /* OgreHlmsPbs */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libOgreHlmsPbsStatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		02D8E4D81ACD478F82F57EBD /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreIrradianceVolume.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreIrradianceVolume.h; path = include/OgreIrradianceVolume.h; sourceTree = SOURCE_ROOT; };
+		198A5AE494F2415282E2BC45 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/Cubemaps/OgreParallaxCorrectedCubemap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreParallaxCorrectedCubemap.h; path = include/Cubemaps/OgreParallaxCorrectedCubemap.h; sourceTree = SOURCE_ROOT; };
+		26BC45F4AADC47CC9607312F /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreHlmsPbs.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreHlmsPbs.cpp; path = src/OgreHlmsPbs.cpp; sourceTree = SOURCE_ROOT; };
+		29AFE543858E49D88C7E739A /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreHlmsJsonPbs.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreHlmsJsonPbs.cpp; path = src/OgreHlmsJsonPbs.cpp; sourceTree = SOURCE_ROOT; };
+		2A902C2602DE41C0B892DCF3 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/Cubemaps/OgreCubemapProbe.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreCubemapProbe.h; path = include/Cubemaps/OgreCubemapProbe.h; sourceTree = SOURCE_ROOT; };
+		2BDC83A9DB734A3592AEB6B6 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreHlmsPbsPrerequisites.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreHlmsPbsPrerequisites.h; path = include/OgreHlmsPbsPrerequisites.h; sourceTree = SOURCE_ROOT; };
+		34317CBEE4D94945ABB866CD /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreIrradianceVolume.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreIrradianceVolume.cpp; path = src/OgreIrradianceVolume.cpp; sourceTree = SOURCE_ROOT; };
+		39404F016FA543EE948191D5 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreHlmsPbs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreHlmsPbs.h; path = include/OgreHlmsPbs.h; sourceTree = SOURCE_ROOT; };
+		3DE6779B5B1D40F6A1314D05 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/Cubemaps/OgreParallaxCorrectedCubemap.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreParallaxCorrectedCubemap.cpp; path = src/Cubemaps/OgreParallaxCorrectedCubemap.cpp; sourceTree = SOURCE_ROOT; };
+		44D7A167A2C24ABA923B5E04 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/Cubemaps/OgreCubemapProbe.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreCubemapProbe.cpp; path = src/Cubemaps/OgreCubemapProbe.cpp; sourceTree = SOURCE_ROOT; };
+		50199074C8884BE681F3BE16 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Common/include/OgreHlmsBufferManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreHlmsBufferManager.h; path = ../Common/include/OgreHlmsBufferManager.h; sourceTree = SOURCE_ROOT; };
+		82D926FDEB3C4FABB483B382 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8540D392DD9E475491C6AB73 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9CEB9C2A516B496C99B474DF /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreHlmsJsonPbs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreHlmsJsonPbs.h; path = include/OgreHlmsJsonPbs.h; sourceTree = SOURCE_ROOT; };
+		A3C572C7BF7C4CA99BC09452 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		AEDA806A08714DD1BA2EE0C7 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreHlmsPbsDatablock.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreHlmsPbsDatablock.h; path = include/OgreHlmsPbsDatablock.h; sourceTree = SOURCE_ROOT; };
+		CB95F37F0CA448138CAD70AE /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/InstantRadiosity/OgreInstantRadiosity.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreInstantRadiosity.h; path = include/InstantRadiosity/OgreInstantRadiosity.h; sourceTree = SOURCE_ROOT; };
+		D694E1B842A34340A2AAB00D /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Common/src/OgreHlmsBufferManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreHlmsBufferManager.cpp; path = ../Common/src/OgreHlmsBufferManager.cpp; sourceTree = SOURCE_ROOT; };
+		D75E83677DA2485D843F7DC3 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreHlmsPbsDatablock.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreHlmsPbsDatablock.cpp; path = src/OgreHlmsPbsDatablock.cpp; sourceTree = SOURCE_ROOT; };
+		D8357B876B52408280232558 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/InstantRadiosity/OgreInstantRadiosity.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreInstantRadiosity.cpp; path = src/InstantRadiosity/OgreInstantRadiosity.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		198B2A782AF0454B9BBAAD3D /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				5E9A160E51DF4B0792A9B0BD /* CMake Rules */,
+				82D926FDEB3C4FABB483B382 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		1A944C753A7E4EFBA187A77D /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D694E1B842A34340A2AAB00D /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Common/src/OgreHlmsBufferManager.cpp */,
+				44D7A167A2C24ABA923B5E04 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/Cubemaps/OgreCubemapProbe.cpp */,
+				3DE6779B5B1D40F6A1314D05 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/Cubemaps/OgreParallaxCorrectedCubemap.cpp */,
+				D8357B876B52408280232558 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/InstantRadiosity/OgreInstantRadiosity.cpp */,
+				29AFE543858E49D88C7E739A /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreHlmsJsonPbs.cpp */,
+				26BC45F4AADC47CC9607312F /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreHlmsPbs.cpp */,
+				D75E83677DA2485D843F7DC3 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreHlmsPbsDatablock.cpp */,
+				34317CBEE4D94945ABB866CD /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreIrradianceVolume.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		2D85F8C53CAD4A1C9651A591 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				50199074C8884BE681F3BE16 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Common/include/OgreHlmsBufferManager.h */,
+				2A902C2602DE41C0B892DCF3 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/Cubemaps/OgreCubemapProbe.h */,
+				198A5AE494F2415282E2BC45 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/Cubemaps/OgreParallaxCorrectedCubemap.h */,
+				CB95F37F0CA448138CAD70AE /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/InstantRadiosity/OgreInstantRadiosity.h */,
+				9CEB9C2A516B496C99B474DF /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreHlmsJsonPbs.h */,
+				39404F016FA543EE948191D5 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreHlmsPbs.h */,
+				AEDA806A08714DD1BA2EE0C7 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreHlmsPbsDatablock.h */,
+				2BDC83A9DB734A3592AEB6B6 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreHlmsPbsPrerequisites.h */,
+				02D8E4D81ACD478F82F57EBD /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include/OgreIrradianceVolume.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		3F75AF30A95F4F959F8B9A77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02AE22F5DA1344D4B93B049E /* OgreHlmsPbs */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49A5F693F34D473C918ADB32 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5AD8E920DFB9479B86D10CAA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6B2D92E324D5476D94FF866A /* OgreHlmsPbs */,
+				FB9FB8B7ECED47DB96B64FE2 /* ALL_BUILD */,
+				198B2A782AF0454B9BBAAD3D /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		5E9A160E51DF4B0792A9B0BD /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		6B2D92E324D5476D94FF866A /* OgreHlmsPbs */ = {
+			isa = PBXGroup;
+			children = (
+				2D85F8C53CAD4A1C9651A591 /* Header Files */,
+				1A944C753A7E4EFBA187A77D /* Source Files */,
+				A3C572C7BF7C4CA99BC09452 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/CMakeLists.txt */,
+			);
+			name = OgreHlmsPbs;
+			sourceTree = "<group>";
+		};
+		787347F609134CB5AB09B963 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C8C3B0DBA80A432CAA6B6D6A = {
+			isa = PBXGroup;
+			children = (
+				5AD8E920DFB9479B86D10CAA /* Sources */,
+				49A5F693F34D473C918ADB32 /* Resources */,
+				3F75AF30A95F4F959F8B9A77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB9FB8B7ECED47DB96B64FE2 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				787347F609134CB5AB09B963 /* CMake Rules */,
+				8540D392DD9E475491C6AB73 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA65DB270A6E49DF969A3CA4 /* OgreHlmsPbs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15EEA229FD4346AEA7A0CDAC /* Build configuration list for PBXNativeTarget "OgreHlmsPbs" */;
+			buildPhases = (
+				015903E38B1E4221B96CBB51 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0A0D272AA994332837C0C9F /* PBXTargetDependency */,
+			);
+			name = OgreHlmsPbs;
+			productName = OgreHlmsPbs;
+			productReference = 02AE22F5DA1344D4B93B049E /* OgreHlmsPbs */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E735FD6F0D9F46E8B6485605 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0820;
+			};
+			buildConfigurationList = 6C9AF29610A74BCF9CC60899 /* Build configuration list for PBXProject "OgreHlmsPbs" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				050528E2532D4C66A51862A3 /* Debug */,
+				F7025F73750647F29651C867 /* Release */,
+				02672BADBFFC46D78A27682A /* MinSizeRel */,
+				3C06FD1846334910A7888698 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = C8C3B0DBA80A432CAA6B6D6A;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				89E77DA57615408A875A62FF /* ALL_BUILD */,
+				AA65DB270A6E49DF969A3CA4 /* OgreHlmsPbs */,
+				2192B09D8B8741C2875AD282 /* ZERO_CHECK */,
+				DE469D78F43D433A8DAB040F /* install */,
+				E0D1A131365048019A21F393 /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0414249E87C8440F94F46617 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		0D2B4CF8B4AC4259B98FFAFE /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs -f /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		12667014A7B84AE09616EB92 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		3D5C5A92701548C38195601B = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		5C41C2E6C93B4529821E2CAB /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs -f /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		829C6858109D423EAF40E5C6 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		CDC866BCC22146F780060A1C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs -f /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		F4D7EC719FAC448FAF6C620E /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs -f /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		015903E38B1E4221B96CBB51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6D302D5B29B437381E94371 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Common/src/OgreHlmsBufferManager.cpp */,
+				1A2D516C5C1E4FECA8DFC3B4 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/Cubemaps/OgreCubemapProbe.cpp */,
+				2154AE47868445F5A7676CF0 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/Cubemaps/OgreParallaxCorrectedCubemap.cpp */,
+				A50F1E756F4243BA8268D28D /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/InstantRadiosity/OgreInstantRadiosity.cpp */,
+				5AF921A75EAC43C4B23FA98F /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreHlmsJsonPbs.cpp */,
+				80FB5A6CF885454197553CB5 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreHlmsPbs.cpp */,
+				E0F27C2F898E43AAA91EAD9C /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreHlmsPbsDatablock.cpp */,
+				FD8E6FC3D896425A9ABF6FC2 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/src/OgreIrradianceVolume.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		112E837231D2438B95301210 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89E77DA57615408A875A62FF /* ALL_BUILD */;
+			targetProxy = 9673C5CE781245C8990ED6C4 /* PBXContainerItemProxy */;
+		};
+		2CAB938841414C0B893EAC63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89E77DA57615408A875A62FF /* ALL_BUILD */;
+			targetProxy = B23BBA67FFA04107A79DCDE4 /* PBXContainerItemProxy */;
+		};
+		53862DC6EE1C4F40B3C6ABC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA65DB270A6E49DF969A3CA4 /* OgreHlmsPbs */;
+			targetProxy = 08B5D0C27BD04E6E87BA1984 /* PBXContainerItemProxy */;
+		};
+		A034EA0220F7490CB96BD047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2192B09D8B8741C2875AD282 /* ZERO_CHECK */;
+			targetProxy = EDF02F42B13B452C8671E92B /* PBXContainerItemProxy */;
+		};
+		F0A0D272AA994332837C0C9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2192B09D8B8741C2875AD282 /* ZERO_CHECK */;
+			targetProxy = 0CA5094DD3BA43C5BA4DFF39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		069B64C09C584B849E4DCFF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/lib/$(PLATFORM_NAME)/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_UNROLL_LOOPS = YES;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[arch=arm64]" = 9.0;
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = OgreHlmsPbsStatic;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		06C6306BC23144D587861115 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/build;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = RelWithDebInfo;
+		};
+		084203C8ED654EE1BD029919 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		0CF02627D3154C5E87EDD9B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		231B1E17A98B4595A430EF64 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/build;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = MinSizeRel;
+		};
+		47D974771C564EC29B2655CA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		513E3B01105D4CC1925C285B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		52F8FC565B7A41ABBE3B52A6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/lib/$(PLATFORM_NAME)/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_UNROLL_LOOPS = YES;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[arch=arm64]" = 9.0;
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = OgreHlmsPbsStatic;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		667C19C6AF3947139D2E9937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		6DDCDA018FDA46679779DD1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/build;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		709C02D0F8C847579F7B6B92 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7C700A59CF724F32AE876DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		7C744BBA078E48F599B20443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		7CFA592618154D978F7DA241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		7FDE10209FC2408A84E51BAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		818D48B2A1FF48B5B142C53F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8B9CC37311654A37B039B714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		9612D15253E54ACEA9509104 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		984E6426D0AA41EABBAF4982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		ADF3D5A935DF4A4DA8967661 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B9B0342E6F3F4EC0835B6437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/build;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BFEAF7B976A84DD39CF4E2AD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CB3F06D27B7D462D93C5D455 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/lib/$(PLATFORM_NAME)/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_UNROLL_LOOPS = YES;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[arch=arm64]" = 9.0;
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = OgreHlmsPbsStatic;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F93F4907F7934DFFA6EBAD1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/lib/$(PLATFORM_NAME)/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_UNROLL_LOOPS = YES;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/../Common/include);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[arch=arm64]" = 9.0;
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = OgreHlmsPbsStatic;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15EEA229FD4346AEA7A0CDAC /* Build configuration list for PBXNativeTarget "OgreHlmsPbs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F93F4907F7934DFFA6EBAD1A /* Debug */,
+				069B64C09C584B849E4DCFF3 /* Release */,
+				52F8FC565B7A41ABBE3B52A6 /* MinSizeRel */,
+				CB3F06D27B7D462D93C5D455 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6C9AF29610A74BCF9CC60899 /* Build configuration list for PBXProject "OgreHlmsPbs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DDCDA018FDA46679779DD1D /* Debug */,
+				B9B0342E6F3F4EC0835B6437 /* Release */,
+				231B1E17A98B4595A430EF64 /* MinSizeRel */,
+				06C6306BC23144D587861115 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		849FADF10A71412685107293 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984E6426D0AA41EABBAF4982 /* Debug */,
+				7C744BBA078E48F599B20443 /* Release */,
+				818D48B2A1FF48B5B142C53F /* MinSizeRel */,
+				709C02D0F8C847579F7B6B92 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BFD5AC0E4339457282CEFF9A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CFA592618154D978F7DA241 /* Debug */,
+				0CF02627D3154C5E87EDD9B6 /* Release */,
+				47D974771C564EC29B2655CA /* MinSizeRel */,
+				ADF3D5A935DF4A4DA8967661 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D25449FF352A4E508491C6E6 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667C19C6AF3947139D2E9937 /* Debug */,
+				7C700A59CF724F32AE876DCD /* Release */,
+				BFEAF7B976A84DD39CF4E2AD /* MinSizeRel */,
+				513E3B01105D4CC1925C285B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D7D128134B6B4A95BBCD8A76 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FDE10209FC2408A84E51BAA /* Debug */,
+				8B9CC37311654A37B039B714 /* Release */,
+				9612D15253E54ACEA9509104 /* MinSizeRel */,
+				084203C8ED654EE1BD029919 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E735FD6F0D9F46E8B6485605 /* Project object */;
+}

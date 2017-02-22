@@ -1,0 +1,964 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A100FE31E5E265E0041D284 /* ApplicationReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A100FE21E5E265E0041D284 /* ApplicationReducer.swift */; };
+		8A100FE51E5E267C0041D284 /* GameReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A100FE41E5E267C0041D284 /* GameReducer.swift */; };
+		8A100FE71E5E26890041D284 /* InterfaceReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A100FE61E5E26890041D284 /* InterfaceReducer.swift */; };
+		8A100FE91E5E26930041D284 /* SceneReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A100FE81E5E26930041D284 /* SceneReducer.swift */; };
+		8A100FEB1E5E269E0041D284 /* ApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A100FEA1E5E269E0041D284 /* ApplicationState.swift */; };
+		8A100FED1E5E26AC0041D284 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A100FEC1E5E26AC0041D284 /* GameState.swift */; };
+		8A100FEF1E5E26BD0041D284 /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A100FEE1E5E26BD0041D284 /* NavigationState.swift */; };
+		8A100FF11E5E27580041D284 /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A100FF01E5E27580041D284 /* MainStore.swift */; };
+		8A100FF71E5E297E0041D284 /* SAWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A100FF51E5E297E0041D284 /* SAWindow.cpp */; };
+		8A100FFB1E5E2A7C0041D284 /* SAWindowBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A100FF91E5E2A7C0041D284 /* SAWindowBridge.mm */; };
+		8A100FFD1E5E2A9A0041D284 /* SAWindowBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A100FFC1E5E2A9A0041D284 /* SAWindowBridge.swift */; };
+		8A10103E1E5E35170041D284 /* SAFileSystemHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A10103C1E5E35170041D284 /* SAFileSystemHelper.mm */; };
+		8A1010471E5E3E160041D284 /* BlendModes_piece_ps.metal in Materials/Unlit */ = {isa = PBXBuildFile; fileRef = 8A1010241E5E32DC0041D284 /* BlendModes_piece_ps.metal */; };
+		8A1010481E5E3E160041D284 /* PixelShader_ps.metal in Materials/Unlit */ = {isa = PBXBuildFile; fileRef = 8A1010251E5E32DC0041D284 /* PixelShader_ps.metal */; };
+		8A1010491E5E3E160041D284 /* Structs_piece_vs_piece_ps.metal in Materials/Unlit */ = {isa = PBXBuildFile; fileRef = 8A1010261E5E32DC0041D284 /* Structs_piece_vs_piece_ps.metal */; };
+		8A10104A1E5E3E160041D284 /* VertexShader_vs.metal in Materials/Unlit */ = {isa = PBXBuildFile; fileRef = 8A1010271E5E32DC0041D284 /* VertexShader_vs.metal */; };
+		8A10104B1E5E3E250041D284 /* Cubemap_piece_all.any in Materials/Any */ = {isa = PBXBuildFile; fileRef = 8A1010101E5E32DC0041D284 /* Cubemap_piece_all.any */; };
+		8A10104C1E5E3E340041D284 /* BlendModes_piece_ps.metal in Materials/Pbs */ = {isa = PBXBuildFile; fileRef = 8A1010171E5E32DC0041D284 /* BlendModes_piece_ps.metal */; };
+		8A10104D1E5E3E340041D284 /* BRDFs_piece_ps.metal in Materials/Pbs */ = {isa = PBXBuildFile; fileRef = 8A1010181E5E32DC0041D284 /* BRDFs_piece_ps.metal */; };
+		8A10104E1E5E3E340041D284 /* DetailMaps_piece_ps.metal in Materials/Pbs */ = {isa = PBXBuildFile; fileRef = 8A1010191E5E32DC0041D284 /* DetailMaps_piece_ps.metal */; };
+		8A10104F1E5E3E340041D284 /* Forward3D_piece_ps.metal in Materials/Pbs */ = {isa = PBXBuildFile; fileRef = 8A10101A1E5E32DC0041D284 /* Forward3D_piece_ps.metal */; };
+		8A1010501E5E3E340041D284 /* IrradianceVolume_piece_ps.metal in Materials/Pbs */ = {isa = PBXBuildFile; fileRef = 8A10101D1E5E32DC0041D284 /* IrradianceVolume_piece_ps.metal */; };
+		8A1010511E5E3E340041D284 /* PixelShader_ps.metal in Materials/Pbs */ = {isa = PBXBuildFile; fileRef = 8A10101F1E5E32DC0041D284 /* PixelShader_ps.metal */; };
+		8A1010521E5E3E340041D284 /* Structs_piece_vs_piece_ps.metal in Materials/Pbs */ = {isa = PBXBuildFile; fileRef = 8A1010201E5E32DC0041D284 /* Structs_piece_vs_piece_ps.metal */; };
+		8A1010531E5E3E340041D284 /* Textures_piece_ps.metal in Materials/Pbs */ = {isa = PBXBuildFile; fileRef = 8A1010211E5E32DC0041D284 /* Textures_piece_ps.metal */; };
+		8A1010541E5E3E340041D284 /* VertexShader_vs.metal in Materials/Pbs */ = {isa = PBXBuildFile; fileRef = 8A1010221E5E32DC0041D284 /* VertexShader_vs.metal */; };
+		8A1010551E5E3E520041D284 /* CrossPlatformSettings_piece_all.metal in Materials/Common */ = {isa = PBXBuildFile; fileRef = 8A1010121E5E32DC0041D284 /* CrossPlatformSettings_piece_all.metal */; };
+		8A1010561E5E3E520041D284 /* Matrix_piece_all.metal in Materials/Common */ = {isa = PBXBuildFile; fileRef = 8A1010131E5E32DC0041D284 /* Matrix_piece_all.metal */; };
+		8A1010571E5E3E520041D284 /* QuaternionCode_piece_all.metal in Materials/Common */ = {isa = PBXBuildFile; fileRef = 8A1010141E5E32DC0041D284 /* QuaternionCode_piece_all.metal */; };
+		8A1010581E5E3E520041D284 /* RenderDepthOnly_piece_ps.metal in Materials/Common */ = {isa = PBXBuildFile; fileRef = 8A1010151E5E32DC0041D284 /* RenderDepthOnly_piece_ps.metal */; };
+		8A1010631E5E4A460041D284 /* SACubeSceneView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A1010611E5E4A460041D284 /* SACubeSceneView.cpp */; };
+		8A10FA841E5E24190041D284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A10FA7B1E5E24190041D284 /* Assets.xcassets */; };
+		8A10FA851E5E24190041D284 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A10FA7C1E5E24190041D284 /* LaunchScreen.storyboard */; };
+		8A10FA871E5E24190041D284 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A10FA801E5E24190041D284 /* Info.plist */; };
+		8A10FA881E5E24190041D284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A10FA821E5E24190041D284 /* AppDelegate.swift */; };
+		8A10FA891E5E24190041D284 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A10FA831E5E24190041D284 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A100FA41E5E256C0041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 80F57F9F1FA246B982ACA736;
+			remoteInfo = OgreMain;
+		};
+		8A100FA61E5E256C0041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31040E55148A421582FA22E2;
+			remoteInfo = RenderSystem_GL3Plus;
+		};
+		8A100FA81E5E256C0041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E69209F06634BF08EF772CE;
+			remoteInfo = RenderSystem_Metal;
+		};
+		8A100FAA1E5E256C0041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 106588D66DD84ECDB01CE5FF;
+			remoteInfo = RenderSystem_NULL;
+		};
+		8A100FAC1E5E256C0041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F339F65754E43D5B47FB4FB;
+			remoteInfo = Plugin_ParticleFX;
+		};
+		8A100FAE1E5E256C0041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 626AFEEFA7284A4AB232528A;
+			remoteInfo = OgreHlmsPbsMobile;
+		};
+		8A100FB01E5E256C0041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B5DB61F673B74431AE406892;
+			remoteInfo = OgreHlmsUnlitMobile;
+		};
+		8A100FB21E5E256C0041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0D927E959654AA09B2D9354;
+			remoteInfo = OgreHlmsPbs;
+		};
+		8A100FB41E5E256C0041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9CFA2D93832543628678ED52;
+			remoteInfo = OgreHlmsUnlit;
+		};
+		8A100FB61E5E256C0041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A7E401D69004C80B7BB05D3;
+			remoteInfo = OgreMeshLodGenerator;
+		};
+		8A100FFE1E5E2B120041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CCF24D38A154888BF71A817;
+			remoteInfo = OgreMain;
+		};
+		8A1010001E5E2B120041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 97AF77F00A0C4EE0B58D54B8;
+			remoteInfo = RenderSystem_Metal;
+		};
+		8A1010021E5E2B120041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C19A2EC88234350B5F1C8A4;
+			remoteInfo = Plugin_ParticleFX;
+		};
+		8A1010041E5E2B120041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FC61BD8B89B7433C8BB7018A;
+			remoteInfo = OgreHlmsPbsMobile;
+		};
+		8A1010061E5E2B120041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 77D012836D964A4E95774AAA;
+			remoteInfo = OgreHlmsUnlitMobile;
+		};
+		8A1010081E5E2B120041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AA65DB270A6E49DF969A3CA4;
+			remoteInfo = OgreHlmsPbs;
+		};
+		8A10100A1E5E2B120041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CFEE3F4FB7554119B05B6CB2;
+			remoteInfo = OgreHlmsUnlit;
+		};
+		8A10100C1E5E2B120041D284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E90A3CA67064B8B8B423BF1;
+			remoteInfo = OgreMeshLodGenerator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A1010431E5E3DF40041D284 /* Materials/Unlit */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Materials/Unlit;
+			dstSubfolderSpec = 7;
+			files = (
+				8A1010471E5E3E160041D284 /* BlendModes_piece_ps.metal in Materials/Unlit */,
+				8A1010481E5E3E160041D284 /* PixelShader_ps.metal in Materials/Unlit */,
+				8A1010491E5E3E160041D284 /* Structs_piece_vs_piece_ps.metal in Materials/Unlit */,
+				8A10104A1E5E3E160041D284 /* VertexShader_vs.metal in Materials/Unlit */,
+			);
+			name = Materials/Unlit;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A1010441E5E3DF60041D284 /* Materials/Any */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Materials/Any;
+			dstSubfolderSpec = 7;
+			files = (
+				8A10104B1E5E3E250041D284 /* Cubemap_piece_all.any in Materials/Any */,
+			);
+			name = Materials/Any;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A1010451E5E3DF80041D284 /* Materials/Pbs */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Materials/Pbs;
+			dstSubfolderSpec = 7;
+			files = (
+				8A10104C1E5E3E340041D284 /* BlendModes_piece_ps.metal in Materials/Pbs */,
+				8A10104D1E5E3E340041D284 /* BRDFs_piece_ps.metal in Materials/Pbs */,
+				8A10104E1E5E3E340041D284 /* DetailMaps_piece_ps.metal in Materials/Pbs */,
+				8A10104F1E5E3E340041D284 /* Forward3D_piece_ps.metal in Materials/Pbs */,
+				8A1010501E5E3E340041D284 /* IrradianceVolume_piece_ps.metal in Materials/Pbs */,
+				8A1010511E5E3E340041D284 /* PixelShader_ps.metal in Materials/Pbs */,
+				8A1010521E5E3E340041D284 /* Structs_piece_vs_piece_ps.metal in Materials/Pbs */,
+				8A1010531E5E3E340041D284 /* Textures_piece_ps.metal in Materials/Pbs */,
+				8A1010541E5E3E340041D284 /* VertexShader_vs.metal in Materials/Pbs */,
+			);
+			name = Materials/Pbs;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A1010461E5E3DF90041D284 /* Materials/Common */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Materials/Common;
+			dstSubfolderSpec = 7;
+			files = (
+				8A1010551E5E3E520041D284 /* CrossPlatformSettings_piece_all.metal in Materials/Common */,
+				8A1010561E5E3E520041D284 /* Matrix_piece_all.metal in Materials/Common */,
+				8A1010571E5E3E520041D284 /* QuaternionCode_piece_all.metal in Materials/Common */,
+				8A1010581E5E3E520041D284 /* RenderDepthOnly_piece_ps.metal in Materials/Common */,
+			);
+			name = Materials/Common;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8A1008591E5E25660041D284 /* Externals-Waterfall.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Externals-Waterfall.debug.xcconfig"; sourceTree = "<group>"; };
+		8A10085A1E5E25660041D284 /* Externals-Waterfall.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Externals-Waterfall.release.xcconfig"; sourceTree = "<group>"; };
+		8A100FE21E5E265E0041D284 /* ApplicationReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationReducer.swift; sourceTree = "<group>"; };
+		8A100FE41E5E267C0041D284 /* GameReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameReducer.swift; sourceTree = "<group>"; };
+		8A100FE61E5E26890041D284 /* InterfaceReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceReducer.swift; sourceTree = "<group>"; };
+		8A100FE81E5E26930041D284 /* SceneReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneReducer.swift; sourceTree = "<group>"; };
+		8A100FEA1E5E269E0041D284 /* ApplicationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationState.swift; sourceTree = "<group>"; };
+		8A100FEC1E5E26AC0041D284 /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		8A100FEE1E5E26BD0041D284 /* NavigationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
+		8A100FF01E5E27580041D284 /* MainStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
+		8A100FF51E5E297E0041D284 /* SAWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SAWindow.cpp; sourceTree = "<group>"; };
+		8A100FF61E5E297E0041D284 /* SAWindow.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SAWindow.hpp; sourceTree = "<group>"; };
+		8A100FF91E5E2A7C0041D284 /* SAWindowBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SAWindowBridge.mm; sourceTree = "<group>"; };
+		8A100FFA1E5E2A7C0041D284 /* SAWindowBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAWindowBridge.h; sourceTree = "<group>"; };
+		8A100FFC1E5E2A9A0041D284 /* SAWindowBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAWindowBridge.swift; sourceTree = "<group>"; };
+		8A1010101E5E32DC0041D284 /* Cubemap_piece_all.any */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cubemap_piece_all.any; sourceTree = "<group>"; };
+		8A1010121E5E32DC0041D284 /* CrossPlatformSettings_piece_all.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CrossPlatformSettings_piece_all.metal; sourceTree = "<group>"; };
+		8A1010131E5E32DC0041D284 /* Matrix_piece_all.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Matrix_piece_all.metal; sourceTree = "<group>"; };
+		8A1010141E5E32DC0041D284 /* QuaternionCode_piece_all.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = QuaternionCode_piece_all.metal; sourceTree = "<group>"; };
+		8A1010151E5E32DC0041D284 /* RenderDepthOnly_piece_ps.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = RenderDepthOnly_piece_ps.metal; sourceTree = "<group>"; };
+		8A1010171E5E32DC0041D284 /* BlendModes_piece_ps.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BlendModes_piece_ps.metal; sourceTree = "<group>"; };
+		8A1010181E5E32DC0041D284 /* BRDFs_piece_ps.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BRDFs_piece_ps.metal; sourceTree = "<group>"; };
+		8A1010191E5E32DC0041D284 /* DetailMaps_piece_ps.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = DetailMaps_piece_ps.metal; sourceTree = "<group>"; };
+		8A10101A1E5E32DC0041D284 /* Forward3D_piece_ps.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Forward3D_piece_ps.metal; sourceTree = "<group>"; };
+		8A10101D1E5E32DC0041D284 /* IrradianceVolume_piece_ps.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = IrradianceVolume_piece_ps.metal; sourceTree = "<group>"; };
+		8A10101F1E5E32DC0041D284 /* PixelShader_ps.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = PixelShader_ps.metal; sourceTree = "<group>"; };
+		8A1010201E5E32DC0041D284 /* Structs_piece_vs_piece_ps.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Structs_piece_vs_piece_ps.metal; sourceTree = "<group>"; };
+		8A1010211E5E32DC0041D284 /* Textures_piece_ps.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Textures_piece_ps.metal; sourceTree = "<group>"; };
+		8A1010221E5E32DC0041D284 /* VertexShader_vs.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = VertexShader_vs.metal; sourceTree = "<group>"; };
+		8A1010241E5E32DC0041D284 /* BlendModes_piece_ps.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BlendModes_piece_ps.metal; sourceTree = "<group>"; };
+		8A1010251E5E32DC0041D284 /* PixelShader_ps.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = PixelShader_ps.metal; sourceTree = "<group>"; };
+		8A1010261E5E32DC0041D284 /* Structs_piece_vs_piece_ps.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Structs_piece_vs_piece_ps.metal; sourceTree = "<group>"; };
+		8A1010271E5E32DC0041D284 /* VertexShader_vs.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = VertexShader_vs.metal; sourceTree = "<group>"; };
+		8A10103C1E5E35170041D284 /* SAFileSystemHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SAFileSystemHelper.mm; sourceTree = "<group>"; };
+		8A10103D1E5E35170041D284 /* SAFileSystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAFileSystemHelper.h; sourceTree = "<group>"; };
+		8A10105F1E5E40EC0041D284 /* Sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sample-Bridging-Header.h"; sourceTree = "<group>"; };
+		8A1010611E5E4A460041D284 /* SACubeSceneView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SACubeSceneView.cpp; sourceTree = "<group>"; };
+		8A1010621E5E4A460041D284 /* SACubeSceneView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SACubeSceneView.hpp; sourceTree = "<group>"; };
+		8A10FA611E5E22DE0041D284 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A10FA7B1E5E24190041D284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A10FA7D1E5E24190041D284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A10FA801E5E24190041D284 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A10FA821E5E24190041D284 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A10FA831E5E24190041D284 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A10FD441E5E25610041D284 /* OGRE.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = OGRE.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A10FA5E1E5E22DE0041D284 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A1008581E5E25660041D284 /* Target Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A1008591E5E25660041D284 /* Externals-Waterfall.debug.xcconfig */,
+				8A10085A1E5E25660041D284 /* Externals-Waterfall.release.xcconfig */,
+			);
+			path = "Target Support Files";
+			sourceTree = "<group>";
+		};
+		8A100FF31E5E29580041D284 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A10100E1E5E32DC0041D284 /* Materials */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A100FF41E5E29580041D284 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8A10103A1E5E34310041D284 /* Helpers */,
+				8A10103B1E5E34310041D284 /* Views */,
+				8A100FF61E5E297E0041D284 /* SAWindow.hpp */,
+				8A100FF51E5E297E0041D284 /* SAWindow.cpp */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8A100FF81E5E2A670041D284 /* Bridges */ = {
+			isa = PBXGroup;
+			children = (
+				8A10105E1E5E40D10041D284 /* SAWindowBridge */,
+				8A10105F1E5E40EC0041D284 /* Sample-Bridging-Header.h */,
+			);
+			path = Bridges;
+			sourceTree = "<group>";
+		};
+		8A10100E1E5E32DC0041D284 /* Materials */ = {
+			isa = PBXGroup;
+			children = (
+				8A10100F1E5E32DC0041D284 /* Any */,
+				8A1010111E5E32DC0041D284 /* Common */,
+				8A1010161E5E32DC0041D284 /* Pbs */,
+				8A1010231E5E32DC0041D284 /* Unlit */,
+			);
+			path = Materials;
+			sourceTree = "<group>";
+		};
+		8A10100F1E5E32DC0041D284 /* Any */ = {
+			isa = PBXGroup;
+			children = (
+				8A1010101E5E32DC0041D284 /* Cubemap_piece_all.any */,
+			);
+			path = Any;
+			sourceTree = "<group>";
+		};
+		8A1010111E5E32DC0041D284 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8A1010121E5E32DC0041D284 /* CrossPlatformSettings_piece_all.metal */,
+				8A1010131E5E32DC0041D284 /* Matrix_piece_all.metal */,
+				8A1010141E5E32DC0041D284 /* QuaternionCode_piece_all.metal */,
+				8A1010151E5E32DC0041D284 /* RenderDepthOnly_piece_ps.metal */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8A1010161E5E32DC0041D284 /* Pbs */ = {
+			isa = PBXGroup;
+			children = (
+				8A1010171E5E32DC0041D284 /* BlendModes_piece_ps.metal */,
+				8A1010181E5E32DC0041D284 /* BRDFs_piece_ps.metal */,
+				8A1010191E5E32DC0041D284 /* DetailMaps_piece_ps.metal */,
+				8A10101A1E5E32DC0041D284 /* Forward3D_piece_ps.metal */,
+				8A10101D1E5E32DC0041D284 /* IrradianceVolume_piece_ps.metal */,
+				8A10101F1E5E32DC0041D284 /* PixelShader_ps.metal */,
+				8A1010201E5E32DC0041D284 /* Structs_piece_vs_piece_ps.metal */,
+				8A1010211E5E32DC0041D284 /* Textures_piece_ps.metal */,
+				8A1010221E5E32DC0041D284 /* VertexShader_vs.metal */,
+			);
+			path = Pbs;
+			sourceTree = "<group>";
+		};
+		8A1010231E5E32DC0041D284 /* Unlit */ = {
+			isa = PBXGroup;
+			children = (
+				8A1010241E5E32DC0041D284 /* BlendModes_piece_ps.metal */,
+				8A1010251E5E32DC0041D284 /* PixelShader_ps.metal */,
+				8A1010261E5E32DC0041D284 /* Structs_piece_vs_piece_ps.metal */,
+				8A1010271E5E32DC0041D284 /* VertexShader_vs.metal */,
+			);
+			path = Unlit;
+			sourceTree = "<group>";
+		};
+		8A10103A1E5E34310041D284 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8A10103D1E5E35170041D284 /* SAFileSystemHelper.h */,
+				8A10103C1E5E35170041D284 /* SAFileSystemHelper.mm */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8A10103B1E5E34310041D284 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A1010621E5E4A460041D284 /* SACubeSceneView.hpp */,
+				8A1010611E5E4A460041D284 /* SACubeSceneView.cpp */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A10105E1E5E40D10041D284 /* SAWindowBridge */ = {
+			isa = PBXGroup;
+			children = (
+				8A100FFA1E5E2A7C0041D284 /* SAWindowBridge.h */,
+				8A100FF91E5E2A7C0041D284 /* SAWindowBridge.mm */,
+				8A100FFC1E5E2A9A0041D284 /* SAWindowBridge.swift */,
+			);
+			name = SAWindowBridge;
+			sourceTree = "<group>";
+		};
+		8A10FA581E5E22DE0041D284 = {
+			isa = PBXGroup;
+			children = (
+				8A10FA631E5E22DE0041D284 /* Sample */,
+				8A10FA621E5E22DE0041D284 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A10FA621E5E22DE0041D284 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A10FA611E5E22DE0041D284 /* Sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A10FA631E5E22DE0041D284 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				8A10FA761E5E24190041D284 /* Core */,
+				8A10FA771E5E24190041D284 /* Externals */,
+				8A10FA781E5E24190041D284 /* Logic */,
+				8A10FA791E5E24190041D284 /* Native */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		8A10FA761E5E24190041D284 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8A100FF31E5E29580041D284 /* Resources */,
+				8A100FF41E5E29580041D284 /* Sources */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8A10FA771E5E24190041D284 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				8A10FA8E1E5E25600041D284 /* Bullet */,
+				8A10FA8F1E5E25600041D284 /* Ogre3D */,
+				8A1008581E5E25660041D284 /* Target Support Files */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		8A10FA781E5E24190041D284 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				8A10FA8A1E5E24810041D284 /* Reducers */,
+				8A10FA8B1E5E24810041D284 /* States */,
+				8A10FA8C1E5E24810041D284 /* Store */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		8A10FA791E5E24190041D284 /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				8A100FF81E5E2A670041D284 /* Bridges */,
+				8A10FA7A1E5E24190041D284 /* Resources */,
+				8A10FA811E5E24190041D284 /* Sources */,
+			);
+			path = Native;
+			sourceTree = "<group>";
+		};
+		8A10FA7A1E5E24190041D284 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A10FA7B1E5E24190041D284 /* Assets.xcassets */,
+				8A10FA7C1E5E24190041D284 /* LaunchScreen.storyboard */,
+				8A10FA801E5E24190041D284 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A10FA811E5E24190041D284 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8A10FA821E5E24190041D284 /* AppDelegate.swift */,
+				8A10FA831E5E24190041D284 /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8A10FA8A1E5E24810041D284 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				8A100FE21E5E265E0041D284 /* ApplicationReducer.swift */,
+				8A100FE41E5E267C0041D284 /* GameReducer.swift */,
+				8A100FE61E5E26890041D284 /* InterfaceReducer.swift */,
+				8A100FE81E5E26930041D284 /* SceneReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		8A10FA8B1E5E24810041D284 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				8A100FEA1E5E269E0041D284 /* ApplicationState.swift */,
+				8A100FEC1E5E26AC0041D284 /* GameState.swift */,
+				8A100FEE1E5E26BD0041D284 /* NavigationState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		8A10FA8C1E5E24810041D284 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				8A100FF01E5E27580041D284 /* MainStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		8A10FA8E1E5E25600041D284 /* Bullet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bullet;
+			sourceTree = "<group>";
+		};
+		8A10FA8F1E5E25600041D284 /* Ogre3D */ = {
+			isa = PBXGroup;
+			children = (
+				8A10FD441E5E25610041D284 /* OGRE.xcodeproj */,
+			);
+			path = Ogre3D;
+			sourceTree = "<group>";
+		};
+		8A10FD451E5E25610041D284 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A100FA51E5E256C0041D284 /* libOgreMainStatic.a */,
+				8A100FA71E5E256C0041D284 /* libRenderSystem_GL3PlusStatic.a */,
+				8A100FA91E5E256C0041D284 /* libRenderSystem_MetalStatic.a */,
+				8A100FAB1E5E256C0041D284 /* libRenderSystem_NULLStatic.a */,
+				8A100FAD1E5E256C0041D284 /* libPlugin_ParticleFXStatic.a */,
+				8A100FAF1E5E256C0041D284 /* libOgreHlmsPbsMobileStatic.a */,
+				8A100FB11E5E256C0041D284 /* libOgreHlmsUnlitMobileStatic.a */,
+				8A100FB31E5E256C0041D284 /* libOgreHlmsPbsStatic.a */,
+				8A100FB51E5E256C0041D284 /* libOgreHlmsUnlitStatic.a */,
+				8A100FB71E5E256C0041D284 /* libOgreMeshLodGeneratorStatic.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A10FA601E5E22DE0041D284 /* Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A10FA731E5E22DE0041D284 /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildPhases = (
+				8A10FA5D1E5E22DE0041D284 /* Sources */,
+				8A10FA5E1E5E22DE0041D284 /* Frameworks */,
+				8A10FA5F1E5E22DE0041D284 /* Resources */,
+				8A1010431E5E3DF40041D284 /* Materials/Unlit */,
+				8A1010441E5E3DF60041D284 /* Materials/Any */,
+				8A1010451E5E3DF80041D284 /* Materials/Pbs */,
+				8A1010461E5E3DF90041D284 /* Materials/Common */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A100FFF1E5E2B120041D284 /* PBXTargetDependency */,
+				8A1010011E5E2B120041D284 /* PBXTargetDependency */,
+				8A1010031E5E2B120041D284 /* PBXTargetDependency */,
+				8A1010051E5E2B120041D284 /* PBXTargetDependency */,
+				8A1010071E5E2B120041D284 /* PBXTargetDependency */,
+				8A1010091E5E2B120041D284 /* PBXTargetDependency */,
+				8A10100B1E5E2B120041D284 /* PBXTargetDependency */,
+				8A10100D1E5E2B120041D284 /* PBXTargetDependency */,
+			);
+			name = Sample;
+			productName = Sample;
+			productReference = 8A10FA611E5E22DE0041D284 /* Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A10FA591E5E22DE0041D284 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Alexey;
+				TargetAttributes = {
+					8A10FA601E5E22DE0041D284 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = YQ63ZZYZV7;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 8A10FA5C1E5E22DE0041D284 /* Build configuration list for PBXProject "Sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A10FA581E5E22DE0041D284;
+			productRefGroup = 8A10FA621E5E22DE0041D284 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8A10FD451E5E25610041D284 /* Products */;
+					ProjectRef = 8A10FD441E5E25610041D284 /* OGRE.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8A10FA601E5E22DE0041D284 /* Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8A100FA51E5E256C0041D284 /* libOgreMainStatic.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOgreMainStatic.a;
+			remoteRef = 8A100FA41E5E256C0041D284 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8A100FA71E5E256C0041D284 /* libRenderSystem_GL3PlusStatic.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRenderSystem_GL3PlusStatic.a;
+			remoteRef = 8A100FA61E5E256C0041D284 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8A100FA91E5E256C0041D284 /* libRenderSystem_MetalStatic.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRenderSystem_MetalStatic.a;
+			remoteRef = 8A100FA81E5E256C0041D284 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8A100FAB1E5E256C0041D284 /* libRenderSystem_NULLStatic.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRenderSystem_NULLStatic.a;
+			remoteRef = 8A100FAA1E5E256C0041D284 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8A100FAD1E5E256C0041D284 /* libPlugin_ParticleFXStatic.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPlugin_ParticleFXStatic.a;
+			remoteRef = 8A100FAC1E5E256C0041D284 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8A100FAF1E5E256C0041D284 /* libOgreHlmsPbsMobileStatic.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOgreHlmsPbsMobileStatic.a;
+			remoteRef = 8A100FAE1E5E256C0041D284 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8A100FB11E5E256C0041D284 /* libOgreHlmsUnlitMobileStatic.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOgreHlmsUnlitMobileStatic.a;
+			remoteRef = 8A100FB01E5E256C0041D284 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8A100FB31E5E256C0041D284 /* libOgreHlmsPbsStatic.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOgreHlmsPbsStatic.a;
+			remoteRef = 8A100FB21E5E256C0041D284 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8A100FB51E5E256C0041D284 /* libOgreHlmsUnlitStatic.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOgreHlmsUnlitStatic.a;
+			remoteRef = 8A100FB41E5E256C0041D284 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8A100FB71E5E256C0041D284 /* libOgreMeshLodGeneratorStatic.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOgreMeshLodGeneratorStatic.a;
+			remoteRef = 8A100FB61E5E256C0041D284 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A10FA5F1E5E22DE0041D284 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A10FA871E5E24190041D284 /* Info.plist in Resources */,
+				8A10FA841E5E24190041D284 /* Assets.xcassets in Resources */,
+				8A10FA851E5E24190041D284 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A10FA5D1E5E22DE0041D284 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A100FEB1E5E269E0041D284 /* ApplicationState.swift in Sources */,
+				8A100FE31E5E265E0041D284 /* ApplicationReducer.swift in Sources */,
+				8A100FE51E5E267C0041D284 /* GameReducer.swift in Sources */,
+				8A100FF71E5E297E0041D284 /* SAWindow.cpp in Sources */,
+				8A100FE91E5E26930041D284 /* SceneReducer.swift in Sources */,
+				8A100FFB1E5E2A7C0041D284 /* SAWindowBridge.mm in Sources */,
+				8A10FA891E5E24190041D284 /* ViewController.swift in Sources */,
+				8A1010631E5E4A460041D284 /* SACubeSceneView.cpp in Sources */,
+				8A100FED1E5E26AC0041D284 /* GameState.swift in Sources */,
+				8A100FF11E5E27580041D284 /* MainStore.swift in Sources */,
+				8A100FE71E5E26890041D284 /* InterfaceReducer.swift in Sources */,
+				8A100FFD1E5E2A9A0041D284 /* SAWindowBridge.swift in Sources */,
+				8A10FA881E5E24190041D284 /* AppDelegate.swift in Sources */,
+				8A10103E1E5E35170041D284 /* SAFileSystemHelper.mm in Sources */,
+				8A100FEF1E5E26BD0041D284 /* NavigationState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A100FFF1E5E2B120041D284 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OgreMain;
+			targetProxy = 8A100FFE1E5E2B120041D284 /* PBXContainerItemProxy */;
+		};
+		8A1010011E5E2B120041D284 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RenderSystem_Metal;
+			targetProxy = 8A1010001E5E2B120041D284 /* PBXContainerItemProxy */;
+		};
+		8A1010031E5E2B120041D284 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Plugin_ParticleFX;
+			targetProxy = 8A1010021E5E2B120041D284 /* PBXContainerItemProxy */;
+		};
+		8A1010051E5E2B120041D284 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OgreHlmsPbsMobile;
+			targetProxy = 8A1010041E5E2B120041D284 /* PBXContainerItemProxy */;
+		};
+		8A1010071E5E2B120041D284 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OgreHlmsUnlitMobile;
+			targetProxy = 8A1010061E5E2B120041D284 /* PBXContainerItemProxy */;
+		};
+		8A1010091E5E2B120041D284 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OgreHlmsPbs;
+			targetProxy = 8A1010081E5E2B120041D284 /* PBXContainerItemProxy */;
+		};
+		8A10100B1E5E2B120041D284 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OgreHlmsUnlit;
+			targetProxy = 8A10100A1E5E2B120041D284 /* PBXContainerItemProxy */;
+		};
+		8A10100D1E5E2B120041D284 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OgreMeshLodGenerator;
+			targetProxy = 8A10100C1E5E2B120041D284 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A10FA7C1E5E24190041D284 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A10FA7D1E5E24190041D284 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A10FA711E5E22DE0041D284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A10FA721E5E22DE0041D284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A10FA741E5E22DE0041D284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A1008591E5E25660041D284 /* Externals-Waterfall.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YQ63ZZYZV7;
+				INFOPLIST_FILE = "$(SRCROOT)/Sample/Native/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sample/Externals/Ogre3D/lib/iphoneos/Debug",
+					"$(PROJECT_DIR)/Sample/Externals/Ogre3D/lib/iphoneos/Release",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testnixsolutions.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "42a81146-5fc7-4b28-af6c-c0046cdd0739";
+				PROVISIONING_PROFILE_SPECIFIER = "All Apps";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/Sample/Native/Bridges/Sample-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8A10FA751E5E22DE0041D284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A10085A1E5E25660041D284 /* Externals-Waterfall.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YQ63ZZYZV7;
+				INFOPLIST_FILE = "$(SRCROOT)/Sample/Native/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sample/Externals/Ogre3D/lib/iphoneos/Debug",
+					"$(PROJECT_DIR)/Sample/Externals/Ogre3D/lib/iphoneos/Release",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testnixsolutions.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "42a81146-5fc7-4b28-af6c-c0046cdd0739";
+				PROVISIONING_PROFILE_SPECIFIER = "All Apps";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/Sample/Native/Bridges/Sample-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A10FA5C1E5E22DE0041D284 /* Build configuration list for PBXProject "Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A10FA711E5E22DE0041D284 /* Debug */,
+				8A10FA721E5E22DE0041D284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A10FA731E5E22DE0041D284 /* Build configuration list for PBXNativeTarget "Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A10FA741E5E22DE0041D284 /* Debug */,
+				8A10FA751E5E22DE0041D284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A10FA591E5E22DE0041D284 /* Project object */;
+}

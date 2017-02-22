@@ -1,0 +1,4 @@
+HEADER_SEARCH_PATHS = $(inherited) "$(SRCROOT)/Waterfall/Externals/Ogre3D/RenderSystems/Metal/include" "$(SRCROOT)/Waterfall/Externals/Ogre3D/PlugIns/ParticleFX/include" "$(SRCROOT)/Waterfall/Externals/Ogre3D/OgreMain/include" "$(SRCROOT)/Waterfall/Externals/Ogre3D/include" "$(SRCROOT)/Waterfall/Externals/Ogre3D/Components/Hlms/Pbs/include" "$(SRCROOT)/Waterfall/Externals/Ogre3D/Components/Hlms/Unlit/include" "$(SRCROOT)/Waterfall/Externals/Ogre3D/Components/Hlms/Common/include"
+LIBRARY_SEARCH_PATHS = $(inherited) "$(SRCROOT)/Waterfall/Externals/Ogre3D/lib/iphoneos/Release"
+OTHER_LDFLAGS = $(inherited) -l"OgreMainStatic" -l"RenderSystem_MetalStatic" -l"Plugin_ParticleFXStatic" -l"OgreHlmsPbsMobileStatic" -l"OgreHlmsUnlitMobileStatic" -l"OgreHlmsPbsStatic" -l"OgreHlmsUnlitStatic" -l"OgreMeshLodGeneratorStatic"
+OTHER_CPLUSPLUSFLAGS = $(inherited) -DNDEBUG

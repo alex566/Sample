@@ -1,0 +1,1223 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2192B09D8B8741C2875AD282 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1E81CB8368A147E5942302DE /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				7B07411BD57745DBA5652CA8 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		89E77DA57615408A875A62FF /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 620E398AF12D41ED837AEA83 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				8363AA5D74FD49FABBCEB9C0 /* CMake Rules */,
+			);
+			dependencies = (
+				942A43B944E646BD84EAC02A /* PBXTargetDependency */,
+				D063269E6B484707BCFB464A /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		DE469D78F43D433A8DAB040F /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9B1219E9EF7A4158A7AA2DC6 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				A4430954DF964BF8BFE49C31 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				3AAA1630AE624EB399474A65 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		E0D1A131365048019A21F393 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0B01FF88CFCC4A3E8EFFA660 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				06E5F434CAEB4BD8A59C593C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				D4F0158E0A76464283C58D5E /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0B9D74BE236E41DABCB3D3B2 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProviderCompressedMesh.h */ = {isa = PBXBuildFile; fileRef = DA9561963E5542DCB6F48C14 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProviderCompressedMesh.h */; };
+		0E7C53638409460FAE724B26 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodWorkQueueWorker.h */ = {isa = PBXBuildFile; fileRef = 2CCDC39D9C3A41BF97AFE309 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodWorkQueueWorker.h */; };
+		0FFAFCC7F1154D8C90867C6C /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostOutside.cpp */ = {isa = PBXBuildFile; fileRef = 2968BA4549064EA29F5E8B90 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostOutside.cpp */; };
+		14EEC87251EA41A794542AC7 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodInputProviderBuffer.cpp */ = {isa = PBXBuildFile; fileRef = 2A131C5222AF4503BDC0B831 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodInputProviderBuffer.cpp */; };
+		17421F227E7E492BB93CCD3E /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodBuffer.cpp */ = {isa = PBXBuildFile; fileRef = D007CB3F128C41F586007EE1 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodBuffer.cpp */; };
+		1881A0B9194B4A618BE4E117 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodPrerequisites.h */ = {isa = PBXBuildFile; fileRef = 48769FFFDA224D8381ED11EF /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodPrerequisites.h */; };
+		1BD94A40D0844C3CA38A0A12 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodConfigSerializer.cpp */ = {isa = PBXBuildFile; fileRef = BF5378F4B9774CC1811EB0CC /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodConfigSerializer.cpp */; };
+		1C14094B8C104C8DB992ED43 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCostQuadric.h */ = {isa = PBXBuildFile; fileRef = AA2BDA46EF4545358293BAB0 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCostQuadric.h */; };
+		23C1FBD9ABAC4E0CA75C904A /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutsideMarker.h */ = {isa = PBXBuildFile; fileRef = 9E3C7C44FECA42C7A2FC46A2 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutsideMarker.h */; };
+		24FAFBCC2EBF4DFCAF0ACABB /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodConfig.cpp */ = {isa = PBXBuildFile; fileRef = FF1EED9E85D54AD682835CA2 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodConfig.cpp */; };
+		339BB19E80D040A5B5CFD2D2 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostCurvature.cpp */ = {isa = PBXBuildFile; fileRef = 2D0980D8FEE54931A77428D7 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostCurvature.cpp */; };
+		35F54FCDAD1B428F94147ACD /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodWorkQueueInjectorListener.h */ = {isa = PBXBuildFile; fileRef = 890F1BDF69824BC0B197D098 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodWorkQueueInjectorListener.h */; };
+		37E163A6455F4C1189E6B517 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderMesh.cpp */ = {isa = PBXBuildFile; fileRef = 73D5BBBB0B3343CC84F4D963 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderMesh.cpp */; };
+		4305922694FD4E4CAF3638EB /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostQuadric.cpp */ = {isa = PBXBuildFile; fileRef = C3AD870158CE4F20B0D856EC /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostQuadric.cpp */; };
+		446F124D1D0B4B16A927DEA6 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodWorkQueueInjector.h */ = {isa = PBXBuildFile; fileRef = A774E255C0AF40E89115F82D /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodWorkQueueInjector.h */; };
+		475BB62BC5BE4B0CB15BB3CE /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderBuffer.cpp */ = {isa = PBXBuildFile; fileRef = C396E95FEF15482380F73245 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderBuffer.cpp */; };
+		4AF52F11CADE499BA01ED5B7 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderCompressedBuffer.cpp */ = {isa = PBXBuildFile; fileRef = 8356F8E9DCEA4F6EAFC86415 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderCompressedBuffer.cpp */; };
+		5155440C91D441488F8E6F71 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderCompressedMesh.cpp */ = {isa = PBXBuildFile; fileRef = 4C21F5E1B8AA47E2BD6D2353 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderCompressedMesh.cpp */; };
+		58E5A4C7F8FA4FC5A85EE8D4 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodWorkQueueInjector.cpp */ = {isa = PBXBuildFile; fileRef = EC4F004F8DB54A39AC7E7184 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodWorkQueueInjector.cpp */; };
+		5F4A49F0D026435BAE702B7F /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreSmallVector.cpp */ = {isa = PBXBuildFile; fileRef = 6525D117D83549FABE1619BE /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreSmallVector.cpp */; };
+		69E7401F77AF4ADD9A46B843 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodConfigSerializer.h */ = {isa = PBXBuildFile; fileRef = B767CAB9D57B4EAAB82582F3 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodConfigSerializer.h */; };
+		6FEF5C698E6C456DAC5B9E04 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProviderCompressedBuffer.h */ = {isa = PBXBuildFile; fileRef = EF35FB5D1F1D42F89A41BB90 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProviderCompressedBuffer.h */; };
+		72EDF9E1C7B94804BA207A4F /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreVectorSetImpl.h */ = {isa = PBXBuildFile; fileRef = BD90E1A4C1ED4E34A616CDDA /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreVectorSetImpl.h */; };
+		76A19394772946E2B7A22BC2 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodWorkQueueWorker.cpp */ = {isa = PBXBuildFile; fileRef = E27AE1ED2A0B4EBF83F4FE2E /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodWorkQueueWorker.cpp */; };
+		8063ECDC7A87460CB4839CE9 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProvider.h */ = {isa = PBXBuildFile; fileRef = AE17D22C54814B4AB16BC895 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProvider.h */; };
+		840F0B0FE99947B3A825FD93 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreMeshLodGenerator.h */ = {isa = PBXBuildFile; fileRef = D7CC82C74F7946DCAEB8D793 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreMeshLodGenerator.h */; };
+		8565BD8B793C42A192B0B555 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutsideMarker.cpp */ = {isa = PBXBuildFile; fileRef = 537801A8FB964447B37BCD07 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutsideMarker.cpp */; };
+		8E8788184BCD46A5BA7CDB4A /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCost.h */ = {isa = PBXBuildFile; fileRef = 2FD8C2E93ACA44BC8BAFA013 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCost.h */; };
+		9B500A43418545A689C9FC26 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapser.cpp */ = {isa = PBXBuildFile; fileRef = F0045A4C8CFF450F9A95C395 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapser.cpp */; };
+		9C37F947C93F4491945AAE64 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodWorkQueueRequest.h */ = {isa = PBXBuildFile; fileRef = E79B92474B524CCE9596F6A9 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodWorkQueueRequest.h */; };
+		A02129CC8A454F15B2E096AE /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodData.h */ = {isa = PBXBuildFile; fileRef = 612560FD248F4FE689D48CDD /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodData.h */; };
+		A6C81D45E80143BA8912F202 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCostCurvature.h */ = {isa = PBXBuildFile; fileRef = 5526FCCC44B8451A9B7F0E08 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCostCurvature.h */; };
+		ADDC540BD2C94EC88FC9BB11 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodInputProvider.cpp */ = {isa = PBXBuildFile; fileRef = 50FAE1A7356142569B5A508E /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodInputProvider.cpp */; };
+		AF49E4A560D541FE8AE9CD02 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLod0Stripifier.h */ = {isa = PBXBuildFile; fileRef = A1F8206508F54AF8B8C9589C /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLod0Stripifier.h */; };
+		AF6F29699C794C229B3745E4 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProviderBuffer.h */ = {isa = PBXBuildFile; fileRef = 77B6666B7E7E425397BC3B61 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProviderBuffer.h */; };
+		B0193ABE30334FF18659B71E /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreVectorSet.h */ = {isa = PBXBuildFile; fileRef = 9A1A9D3685884E41BC01E589 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreVectorSet.h */; };
+		B32F3F500FBB4902A53A3A47 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodData.cpp */ = {isa = PBXBuildFile; fileRef = 63F6232A1F5048048B0B03D2 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodData.cpp */; };
+		B70DA397C5064F1FBEC569CB /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostProfiler.cpp */ = {isa = PBXBuildFile; fileRef = 56F07D67CF744D6984ECB3F4 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostProfiler.cpp */; };
+		B7B014A5BF0D450688F016E5 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodBuffer.h */ = {isa = PBXBuildFile; fileRef = 18F0FAD876D34219B5042C95 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodBuffer.h */; };
+		C3E24A5F2D0B4B69BD4943CC /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCostOutside.h */ = {isa = PBXBuildFile; fileRef = 5C9DEF3270CF4ECCB215A590 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCostOutside.h */; };
+		C560EF77068E4FDBB145499A /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodInputProvider.h */ = {isa = PBXBuildFile; fileRef = 7BF8DD1607AE496C83793B37 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodInputProvider.h */; };
+		D0A099C704684C7A9C704F97 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodInputProviderMesh.cpp */ = {isa = PBXBuildFile; fileRef = 1B23FF47C50B4A18AECDDA8A /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodInputProviderMesh.cpp */; };
+		E314A847D7474919A1B697D5 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCost.cpp */ = {isa = PBXBuildFile; fileRef = 7C4432CB5DBE410582F7152E /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCost.cpp */; };
+		E7BBDD9634654BE69F7B9960 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapser.h */ = {isa = PBXBuildFile; fileRef = F83AD4272CA64D199F30A2DA /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapser.h */; };
+		E7F3F8448B914F99B74644BE /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreMeshLodGenerator.cpp */ = {isa = PBXBuildFile; fileRef = 368341DB80734324B1C6FA33 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreMeshLodGenerator.cpp */; };
+		E8E553F9AD994347B5A59649 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCostProfiler.h */ = {isa = PBXBuildFile; fileRef = ECF00BACF0D14AA3A1E2DD71 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCostProfiler.h */; };
+		F45AAAFC0ECC48F8B4F834A3 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodInputProviderMesh.h */ = {isa = PBXBuildFile; fileRef = 0FB6FA9460BA48BE9816F8D9 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodInputProviderMesh.h */; };
+		F4F724E36D8240F4BD05BA51 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodConfig.h */ = {isa = PBXBuildFile; fileRef = DF86EED9CBA849468F1D094F /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodConfig.h */; };
+		F59BC61BE4A04A538D90260D /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodInputProviderBuffer.h */ = {isa = PBXBuildFile; fileRef = 0A27A154420143D1BE5D65E3 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodInputProviderBuffer.h */; };
+		F972CA30F00E40D0BA18FD23 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8B50B853A8834CA69DC86F7B /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/CMakeLists.txt */; };
+		FC5BCF33BF7D44E1ABCDF301 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProviderMesh.h */ = {isa = PBXBuildFile; fileRef = 22F93B774F944769A672D931 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProviderMesh.h */; };
+		FF55AFB7DE1C46F591B3D953 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreSmallVector.h */ = {isa = PBXBuildFile; fileRef = 85A54CDCE62B42858D06E296 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreSmallVector.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		4FE5796B25F842DA91EEC0EA /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		7B0BD2D7F10F4B868244E91D /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		99C33F0864BF430AA9727D57 = {
+			isa = PBXBuildStyle;
+		};
+		A3483B1C18844F45AAD4EC76 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		E6931B49B497483F9F532FCB /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		278FC863FD7744AC860C815B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26F38B68A00C47CA98336566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89E77DA57615408A875A62FF;
+			remoteInfo = ALL_BUILD;
+		};
+		470A368A3D2E4C88A9D9482D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26F38B68A00C47CA98336566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89E77DA57615408A875A62FF;
+			remoteInfo = ALL_BUILD;
+		};
+		9F9C9BA0BA664C6FB1D7B181 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26F38B68A00C47CA98336566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E90A3CA67064B8B8B423BF1;
+			remoteInfo = OgreMeshLodGenerator;
+		};
+		EE0E21E5AC18426CA6BB40FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26F38B68A00C47CA98336566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2192B09D8B8741C2875AD282;
+			remoteInfo = ZERO_CHECK;
+		};
+		EE0F1F724BE44AAABA0AF164 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26F38B68A00C47CA98336566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2192B09D8B8741C2875AD282;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A27A154420143D1BE5D65E3 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodInputProviderBuffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodInputProviderBuffer.h; path = include/OgreLodInputProviderBuffer.h; sourceTree = SOURCE_ROOT; };
+		0FB6FA9460BA48BE9816F8D9 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodInputProviderMesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodInputProviderMesh.h; path = include/OgreLodInputProviderMesh.h; sourceTree = SOURCE_ROOT; };
+		14E0DA7C44F84BE5A24ADEDF /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		18F0FAD876D34219B5042C95 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodBuffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodBuffer.h; path = include/OgreLodBuffer.h; sourceTree = SOURCE_ROOT; };
+		1B23FF47C50B4A18AECDDA8A /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodInputProviderMesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodInputProviderMesh.cpp; path = src/OgreLodInputProviderMesh.cpp; sourceTree = SOURCE_ROOT; };
+		22F93B774F944769A672D931 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProviderMesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodOutputProviderMesh.h; path = include/OgreLodOutputProviderMesh.h; sourceTree = SOURCE_ROOT; };
+		2968BA4549064EA29F5E8B90 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostOutside.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodCollapseCostOutside.cpp; path = src/OgreLodCollapseCostOutside.cpp; sourceTree = SOURCE_ROOT; };
+		2A131C5222AF4503BDC0B831 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodInputProviderBuffer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodInputProviderBuffer.cpp; path = src/OgreLodInputProviderBuffer.cpp; sourceTree = SOURCE_ROOT; };
+		2CCDC39D9C3A41BF97AFE309 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodWorkQueueWorker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodWorkQueueWorker.h; path = include/OgreLodWorkQueueWorker.h; sourceTree = SOURCE_ROOT; };
+		2D0980D8FEE54931A77428D7 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostCurvature.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodCollapseCostCurvature.cpp; path = src/OgreLodCollapseCostCurvature.cpp; sourceTree = SOURCE_ROOT; };
+		2FD8C2E93ACA44BC8BAFA013 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCost.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodCollapseCost.h; path = include/OgreLodCollapseCost.h; sourceTree = SOURCE_ROOT; };
+		368341DB80734324B1C6FA33 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreMeshLodGenerator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreMeshLodGenerator.cpp; path = src/OgreMeshLodGenerator.cpp; sourceTree = SOURCE_ROOT; };
+		48769FFFDA224D8381ED11EF /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodPrerequisites.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodPrerequisites.h; path = include/OgreLodPrerequisites.h; sourceTree = SOURCE_ROOT; };
+		4C21F5E1B8AA47E2BD6D2353 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderCompressedMesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodOutputProviderCompressedMesh.cpp; path = src/OgreLodOutputProviderCompressedMesh.cpp; sourceTree = SOURCE_ROOT; };
+		50FAE1A7356142569B5A508E /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodInputProvider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodInputProvider.cpp; path = src/OgreLodInputProvider.cpp; sourceTree = SOURCE_ROOT; };
+		537801A8FB964447B37BCD07 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutsideMarker.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodOutsideMarker.cpp; path = src/OgreLodOutsideMarker.cpp; sourceTree = SOURCE_ROOT; };
+		5526FCCC44B8451A9B7F0E08 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCostCurvature.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodCollapseCostCurvature.h; path = include/OgreLodCollapseCostCurvature.h; sourceTree = SOURCE_ROOT; };
+		56F07D67CF744D6984ECB3F4 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostProfiler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodCollapseCostProfiler.cpp; path = src/OgreLodCollapseCostProfiler.cpp; sourceTree = SOURCE_ROOT; };
+		5C9DEF3270CF4ECCB215A590 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCostOutside.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodCollapseCostOutside.h; path = include/OgreLodCollapseCostOutside.h; sourceTree = SOURCE_ROOT; };
+		612560FD248F4FE689D48CDD /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodData.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodData.h; path = include/OgreLodData.h; sourceTree = SOURCE_ROOT; };
+		63C382CD6A774E3EAEDEBCCC /* OgreMeshLodGenerator */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libOgreMeshLodGeneratorStatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F6232A1F5048048B0B03D2 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodData.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodData.cpp; path = src/OgreLodData.cpp; sourceTree = SOURCE_ROOT; };
+		6525D117D83549FABE1619BE /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreSmallVector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreSmallVector.cpp; path = src/OgreSmallVector.cpp; sourceTree = SOURCE_ROOT; };
+		73D5BBBB0B3343CC84F4D963 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderMesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodOutputProviderMesh.cpp; path = src/OgreLodOutputProviderMesh.cpp; sourceTree = SOURCE_ROOT; };
+		77B6666B7E7E425397BC3B61 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProviderBuffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodOutputProviderBuffer.h; path = include/OgreLodOutputProviderBuffer.h; sourceTree = SOURCE_ROOT; };
+		7BF8DD1607AE496C83793B37 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodInputProvider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodInputProvider.h; path = include/OgreLodInputProvider.h; sourceTree = SOURCE_ROOT; };
+		7C4432CB5DBE410582F7152E /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCost.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodCollapseCost.cpp; path = src/OgreLodCollapseCost.cpp; sourceTree = SOURCE_ROOT; };
+		8356F8E9DCEA4F6EAFC86415 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderCompressedBuffer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodOutputProviderCompressedBuffer.cpp; path = src/OgreLodOutputProviderCompressedBuffer.cpp; sourceTree = SOURCE_ROOT; };
+		85A54CDCE62B42858D06E296 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreSmallVector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreSmallVector.h; path = include/OgreSmallVector.h; sourceTree = SOURCE_ROOT; };
+		890F1BDF69824BC0B197D098 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodWorkQueueInjectorListener.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodWorkQueueInjectorListener.h; path = include/OgreLodWorkQueueInjectorListener.h; sourceTree = SOURCE_ROOT; };
+		8B50B853A8834CA69DC86F7B /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8C545E3D10874490BE3AEEB1 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9A1A9D3685884E41BC01E589 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreVectorSet.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreVectorSet.h; path = include/OgreVectorSet.h; sourceTree = SOURCE_ROOT; };
+		9E3C7C44FECA42C7A2FC46A2 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutsideMarker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodOutsideMarker.h; path = include/OgreLodOutsideMarker.h; sourceTree = SOURCE_ROOT; };
+		A1F8206508F54AF8B8C9589C /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLod0Stripifier.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLod0Stripifier.h; path = include/OgreLod0Stripifier.h; sourceTree = SOURCE_ROOT; };
+		A774E255C0AF40E89115F82D /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodWorkQueueInjector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodWorkQueueInjector.h; path = include/OgreLodWorkQueueInjector.h; sourceTree = SOURCE_ROOT; };
+		AA2BDA46EF4545358293BAB0 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCostQuadric.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodCollapseCostQuadric.h; path = include/OgreLodCollapseCostQuadric.h; sourceTree = SOURCE_ROOT; };
+		AE17D22C54814B4AB16BC895 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProvider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodOutputProvider.h; path = include/OgreLodOutputProvider.h; sourceTree = SOURCE_ROOT; };
+		B767CAB9D57B4EAAB82582F3 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodConfigSerializer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodConfigSerializer.h; path = include/OgreLodConfigSerializer.h; sourceTree = SOURCE_ROOT; };
+		BD90E1A4C1ED4E34A616CDDA /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreVectorSetImpl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreVectorSetImpl.h; path = include/OgreVectorSetImpl.h; sourceTree = SOURCE_ROOT; };
+		BF5378F4B9774CC1811EB0CC /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodConfigSerializer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodConfigSerializer.cpp; path = src/OgreLodConfigSerializer.cpp; sourceTree = SOURCE_ROOT; };
+		C396E95FEF15482380F73245 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderBuffer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodOutputProviderBuffer.cpp; path = src/OgreLodOutputProviderBuffer.cpp; sourceTree = SOURCE_ROOT; };
+		C3AD870158CE4F20B0D856EC /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostQuadric.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodCollapseCostQuadric.cpp; path = src/OgreLodCollapseCostQuadric.cpp; sourceTree = SOURCE_ROOT; };
+		D007CB3F128C41F586007EE1 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodBuffer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodBuffer.cpp; path = src/OgreLodBuffer.cpp; sourceTree = SOURCE_ROOT; };
+		D7CC82C74F7946DCAEB8D793 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreMeshLodGenerator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreMeshLodGenerator.h; path = include/OgreMeshLodGenerator.h; sourceTree = SOURCE_ROOT; };
+		DA9561963E5542DCB6F48C14 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProviderCompressedMesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodOutputProviderCompressedMesh.h; path = include/OgreLodOutputProviderCompressedMesh.h; sourceTree = SOURCE_ROOT; };
+		DF86EED9CBA849468F1D094F /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodConfig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodConfig.h; path = include/OgreLodConfig.h; sourceTree = SOURCE_ROOT; };
+		E27AE1ED2A0B4EBF83F4FE2E /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodWorkQueueWorker.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodWorkQueueWorker.cpp; path = src/OgreLodWorkQueueWorker.cpp; sourceTree = SOURCE_ROOT; };
+		E79B92474B524CCE9596F6A9 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodWorkQueueRequest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodWorkQueueRequest.h; path = include/OgreLodWorkQueueRequest.h; sourceTree = SOURCE_ROOT; };
+		EC4F004F8DB54A39AC7E7184 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodWorkQueueInjector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodWorkQueueInjector.cpp; path = src/OgreLodWorkQueueInjector.cpp; sourceTree = SOURCE_ROOT; };
+		ECF00BACF0D14AA3A1E2DD71 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCostProfiler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodCollapseCostProfiler.h; path = include/OgreLodCollapseCostProfiler.h; sourceTree = SOURCE_ROOT; };
+		EF35FB5D1F1D42F89A41BB90 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProviderCompressedBuffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodOutputProviderCompressedBuffer.h; path = include/OgreLodOutputProviderCompressedBuffer.h; sourceTree = SOURCE_ROOT; };
+		F0045A4C8CFF450F9A95C395 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodCollapser.cpp; path = src/OgreLodCollapser.cpp; sourceTree = SOURCE_ROOT; };
+		F83AD4272CA64D199F30A2DA /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapser.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OgreLodCollapser.h; path = include/OgreLodCollapser.h; sourceTree = SOURCE_ROOT; };
+		FF1EED9E85D54AD682835CA2 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodConfig.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OgreLodConfig.cpp; path = src/OgreLodConfig.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		046417E464244140B7F2A499 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				83F67CE62E7A4AEBA0627088 /* CMake Rules */,
+				8C545E3D10874490BE3AEEB1 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		25C8936B40334E96B81D2DC9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BD7B44B0665E4C9E91A3A718 /* OgreMeshLodGenerator */,
+				046417E464244140B7F2A499 /* ALL_BUILD */,
+				2693821215D247F793E1E01D /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		2693821215D247F793E1E01D /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				AB9095FDCBE546B49AB370F0 /* CMake Rules */,
+				14E0DA7C44F84BE5A24ADEDF /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		30ECE89E0A6E4192B38CDC21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4E7BF185073246C684E6C6B8 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D007CB3F128C41F586007EE1 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodBuffer.cpp */,
+				7C4432CB5DBE410582F7152E /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCost.cpp */,
+				2D0980D8FEE54931A77428D7 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostCurvature.cpp */,
+				2968BA4549064EA29F5E8B90 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostOutside.cpp */,
+				56F07D67CF744D6984ECB3F4 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostProfiler.cpp */,
+				C3AD870158CE4F20B0D856EC /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostQuadric.cpp */,
+				F0045A4C8CFF450F9A95C395 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapser.cpp */,
+				FF1EED9E85D54AD682835CA2 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodConfig.cpp */,
+				BF5378F4B9774CC1811EB0CC /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodConfigSerializer.cpp */,
+				63F6232A1F5048048B0B03D2 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodData.cpp */,
+				50FAE1A7356142569B5A508E /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodInputProvider.cpp */,
+				2A131C5222AF4503BDC0B831 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodInputProviderBuffer.cpp */,
+				1B23FF47C50B4A18AECDDA8A /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodInputProviderMesh.cpp */,
+				C396E95FEF15482380F73245 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderBuffer.cpp */,
+				8356F8E9DCEA4F6EAFC86415 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderCompressedBuffer.cpp */,
+				4C21F5E1B8AA47E2BD6D2353 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderCompressedMesh.cpp */,
+				73D5BBBB0B3343CC84F4D963 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderMesh.cpp */,
+				537801A8FB964447B37BCD07 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutsideMarker.cpp */,
+				EC4F004F8DB54A39AC7E7184 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodWorkQueueInjector.cpp */,
+				E27AE1ED2A0B4EBF83F4FE2E /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodWorkQueueWorker.cpp */,
+				368341DB80734324B1C6FA33 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreMeshLodGenerator.cpp */,
+				6525D117D83549FABE1619BE /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreSmallVector.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		64E36587561E4BF0B8BA7933 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63C382CD6A774E3EAEDEBCCC /* OgreMeshLodGenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83F67CE62E7A4AEBA0627088 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		8E4B304A1A55475BA75C8206 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1F8206508F54AF8B8C9589C /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLod0Stripifier.h */,
+				18F0FAD876D34219B5042C95 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodBuffer.h */,
+				2FD8C2E93ACA44BC8BAFA013 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCost.h */,
+				5526FCCC44B8451A9B7F0E08 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCostCurvature.h */,
+				5C9DEF3270CF4ECCB215A590 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCostOutside.h */,
+				ECF00BACF0D14AA3A1E2DD71 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCostProfiler.h */,
+				AA2BDA46EF4545358293BAB0 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapseCostQuadric.h */,
+				F83AD4272CA64D199F30A2DA /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodCollapser.h */,
+				DF86EED9CBA849468F1D094F /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodConfig.h */,
+				B767CAB9D57B4EAAB82582F3 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodConfigSerializer.h */,
+				612560FD248F4FE689D48CDD /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodData.h */,
+				7BF8DD1607AE496C83793B37 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodInputProvider.h */,
+				0A27A154420143D1BE5D65E3 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodInputProviderBuffer.h */,
+				0FB6FA9460BA48BE9816F8D9 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodInputProviderMesh.h */,
+				AE17D22C54814B4AB16BC895 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProvider.h */,
+				77B6666B7E7E425397BC3B61 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProviderBuffer.h */,
+				EF35FB5D1F1D42F89A41BB90 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProviderCompressedBuffer.h */,
+				DA9561963E5542DCB6F48C14 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProviderCompressedMesh.h */,
+				22F93B774F944769A672D931 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutputProviderMesh.h */,
+				9E3C7C44FECA42C7A2FC46A2 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodOutsideMarker.h */,
+				48769FFFDA224D8381ED11EF /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodPrerequisites.h */,
+				A774E255C0AF40E89115F82D /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodWorkQueueInjector.h */,
+				890F1BDF69824BC0B197D098 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodWorkQueueInjectorListener.h */,
+				E79B92474B524CCE9596F6A9 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodWorkQueueRequest.h */,
+				2CCDC39D9C3A41BF97AFE309 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreLodWorkQueueWorker.h */,
+				D7CC82C74F7946DCAEB8D793 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreMeshLodGenerator.h */,
+				85A54CDCE62B42858D06E296 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreSmallVector.h */,
+				9A1A9D3685884E41BC01E589 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreVectorSet.h */,
+				BD90E1A4C1ED4E34A616CDDA /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include/OgreVectorSetImpl.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		925E71B1695340D4B2BD63DE = {
+			isa = PBXGroup;
+			children = (
+				25C8936B40334E96B81D2DC9 /* Sources */,
+				30ECE89E0A6E4192B38CDC21 /* Resources */,
+				64E36587561E4BF0B8BA7933 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB9095FDCBE546B49AB370F0 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		BD7B44B0665E4C9E91A3A718 /* OgreMeshLodGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				8E4B304A1A55475BA75C8206 /* Header Files */,
+				4E7BF185073246C684E6C6B8 /* Source Files */,
+				8B50B853A8834CA69DC86F7B /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/CMakeLists.txt */,
+			);
+			name = OgreMeshLodGenerator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E90A3CA67064B8B8B423BF1 /* OgreMeshLodGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 512DA39B36AF44F8A8A376B9 /* Build configuration list for PBXNativeTarget "OgreMeshLodGenerator" */;
+			buildPhases = (
+				E28C0199501D4B669BCE1B8C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC77CD394DD7439586EA1E01 /* PBXTargetDependency */,
+			);
+			name = OgreMeshLodGenerator;
+			productName = OgreMeshLodGenerator;
+			productReference = 63C382CD6A774E3EAEDEBCCC /* OgreMeshLodGenerator */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26F38B68A00C47CA98336566 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0820;
+			};
+			buildConfigurationList = 26CDDD366C1C4213BB274612 /* Build configuration list for PBXProject "OgreMeshLodGenerator" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				A3483B1C18844F45AAD4EC76 /* Debug */,
+				E6931B49B497483F9F532FCB /* Release */,
+				4FE5796B25F842DA91EEC0EA /* MinSizeRel */,
+				7B0BD2D7F10F4B868244E91D /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 925E71B1695340D4B2BD63DE;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				89E77DA57615408A875A62FF /* ALL_BUILD */,
+				0E90A3CA67064B8B8B423BF1 /* OgreMeshLodGenerator */,
+				2192B09D8B8741C2875AD282 /* ZERO_CHECK */,
+				DE469D78F43D433A8DAB040F /* install */,
+				E0D1A131365048019A21F393 /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06E5F434CAEB4BD8A59C593C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator -f /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		4D2260AC1EF9459091E3EC87 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		5936C3EE4E774A8387EE65FC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		7B07411BD57745DBA5652CA8 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator -f /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		8363AA5D74FD49FABBCEB9C0 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator -f /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		8C16798AF4874B61A4795B2A = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A4430954DF964BF8BFE49C31 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator -f /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		D4FE3DB9391A452788EB0E75 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E28C0199501D4B669BCE1B8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17421F227E7E492BB93CCD3E /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodBuffer.cpp */,
+				E314A847D7474919A1B697D5 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCost.cpp */,
+				339BB19E80D040A5B5CFD2D2 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostCurvature.cpp */,
+				0FFAFCC7F1154D8C90867C6C /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostOutside.cpp */,
+				B70DA397C5064F1FBEC569CB /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostProfiler.cpp */,
+				4305922694FD4E4CAF3638EB /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapseCostQuadric.cpp */,
+				9B500A43418545A689C9FC26 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodCollapser.cpp */,
+				24FAFBCC2EBF4DFCAF0ACABB /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodConfig.cpp */,
+				1BD94A40D0844C3CA38A0A12 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodConfigSerializer.cpp */,
+				B32F3F500FBB4902A53A3A47 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodData.cpp */,
+				ADDC540BD2C94EC88FC9BB11 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodInputProvider.cpp */,
+				14EEC87251EA41A794542AC7 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodInputProviderBuffer.cpp */,
+				D0A099C704684C7A9C704F97 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodInputProviderMesh.cpp */,
+				475BB62BC5BE4B0CB15BB3CE /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderBuffer.cpp */,
+				4AF52F11CADE499BA01ED5B7 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderCompressedBuffer.cpp */,
+				5155440C91D441488F8E6F71 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderCompressedMesh.cpp */,
+				37E163A6455F4C1189E6B517 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutputProviderMesh.cpp */,
+				8565BD8B793C42A192B0B555 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodOutsideMarker.cpp */,
+				58E5A4C7F8FA4FC5A85EE8D4 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodWorkQueueInjector.cpp */,
+				76A19394772946E2B7A22BC2 /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreLodWorkQueueWorker.cpp */,
+				E7F3F8448B914F99B74644BE /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreMeshLodGenerator.cpp */,
+				5F4A49F0D026435BAE702B7F /* /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/src/OgreSmallVector.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AAA1630AE624EB399474A65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89E77DA57615408A875A62FF /* ALL_BUILD */;
+			targetProxy = 470A368A3D2E4C88A9D9482D /* PBXContainerItemProxy */;
+		};
+		942A43B944E646BD84EAC02A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E90A3CA67064B8B8B423BF1 /* OgreMeshLodGenerator */;
+			targetProxy = 9F9C9BA0BA664C6FB1D7B181 /* PBXContainerItemProxy */;
+		};
+		D063269E6B484707BCFB464A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2192B09D8B8741C2875AD282 /* ZERO_CHECK */;
+			targetProxy = EE0F1F724BE44AAABA0AF164 /* PBXContainerItemProxy */;
+		};
+		D4F0158E0A76464283C58D5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89E77DA57615408A875A62FF /* ALL_BUILD */;
+			targetProxy = 278FC863FD7744AC860C815B /* PBXContainerItemProxy */;
+		};
+		DC77CD394DD7439586EA1E01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2192B09D8B8741C2875AD282 /* ZERO_CHECK */;
+			targetProxy = EE0E21E5AC18426CA6BB40FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00A91BBE9A66431E83ACAD53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		096B29E88BAC4AB6AED83CFA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/build;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = MinSizeRel;
+		};
+		0CF8ADE1D67C4E44B11115A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/lib/$(PLATFORM_NAME)/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",OGRE_MESHLODGENERATOR_EXPORTS,_MT,_USRDLL);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_UNROLL_LOOPS = YES;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[arch=arm64]" = 9.0;
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = OgreMeshLodGeneratorStatic;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		24A9E53C3A7248A9B724D71B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/build;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		265FF3D031DC41339EDCBA1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/lib/$(PLATFORM_NAME)/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",OGRE_MESHLODGENERATOR_EXPORTS,_MT,_USRDLL);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_UNROLL_LOOPS = YES;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[arch=arm64]" = 9.0;
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = OgreMeshLodGeneratorStatic;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		33BA66673D754D419FA6A0BA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3C12BA561E964E558515AA9F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		60866AF640CF4A2B9DD2DCCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		7F6B9AD9F3D244FE8CA9E48B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		83DF9CF0C35641A4A63186B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		8BCA608FFA8D4A8C9C0CA5EA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/lib/$(PLATFORM_NAME)/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",OGRE_MESHLODGENERATOR_EXPORTS,_MT,_USRDLL);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_UNROLL_LOOPS = YES;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[arch=arm64]" = 9.0;
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = OgreMeshLodGeneratorStatic;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9129B7B6704A48F2AC36F3E9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		91BEBBC3293648AAA54C42FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		9F8666190C7D4D28ABDAEAE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/build;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A24B7007CFAA4941AAE3CFA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		AB0D144ABC5B4FD8BE932691 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C717B45CBE0D40F2AC5466CD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C7E7F86535F9472CBE6EEC70 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CA80DC2FCF054E42A6B89F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		CC61AF80112C4507A9BD2398 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		D6F54D4448394B24ADFAC221 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DFA7E0CCFDBB4F30AF9B83C5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/lib/$(PLATFORM_NAME)/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",OGRE_MESHLODGENERATOR_EXPORTS,_MT,_USRDLL);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_UNROLL_LOOPS = YES;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[arch=arm64]" = 9.0;
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = OgreMeshLodGeneratorStatic;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FC2EF8194A4E4C5D9FFB0E19 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/build;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = RelWithDebInfo;
+		};
+		FE84641E95E442A7A5B6A4BF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/include,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/iOS,/Library/Frameworks/Mono.framework/Headers,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/OgreMain/include/Threading,/Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/alexey/Projects/waterfall/Waterfall/Waterfall/Externals/Ogre3D/Components/MeshLodGenerator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B01FF88CFCC4A3E8EFFA660 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60866AF640CF4A2B9DD2DCCC /* Debug */,
+				00A91BBE9A66431E83ACAD53 /* Release */,
+				33BA66673D754D419FA6A0BA /* MinSizeRel */,
+				3C12BA561E964E558515AA9F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1E81CB8368A147E5942302DE /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91BEBBC3293648AAA54C42FE /* Debug */,
+				CA80DC2FCF054E42A6B89F34 /* Release */,
+				D6F54D4448394B24ADFAC221 /* MinSizeRel */,
+				9129B7B6704A48F2AC36F3E9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		26CDDD366C1C4213BB274612 /* Build configuration list for PBXProject "OgreMeshLodGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F8666190C7D4D28ABDAEAE3 /* Debug */,
+				24A9E53C3A7248A9B724D71B /* Release */,
+				096B29E88BAC4AB6AED83CFA /* MinSizeRel */,
+				FC2EF8194A4E4C5D9FFB0E19 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		512DA39B36AF44F8A8A376B9 /* Build configuration list for PBXNativeTarget "OgreMeshLodGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CF8ADE1D67C4E44B11115A6 /* Debug */,
+				265FF3D031DC41339EDCBA1A /* Release */,
+				DFA7E0CCFDBB4F30AF9B83C5 /* MinSizeRel */,
+				8BCA608FFA8D4A8C9C0CA5EA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		620E398AF12D41ED837AEA83 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A24B7007CFAA4941AAE3CFA1 /* Debug */,
+				CC61AF80112C4507A9BD2398 /* Release */,
+				AB0D144ABC5B4FD8BE932691 /* MinSizeRel */,
+				FE84641E95E442A7A5B6A4BF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9B1219E9EF7A4158A7AA2DC6 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83DF9CF0C35641A4A63186B1 /* Debug */,
+				7F6B9AD9F3D244FE8CA9E48B /* Release */,
+				C7E7F86535F9472CBE6EEC70 /* MinSizeRel */,
+				C717B45CBE0D40F2AC5466CD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26F38B68A00C47CA98336566 /* Project object */;
+}
