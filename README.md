@@ -1,6 +1,6 @@
 # Key moments:
-Sample_Native_Sources/ 
+Sample/Native/Sources/
 
-Sample_Native_Bridges/SAWindowBridge
+Sample/Native/Bridges/SAWindowBridge/
 
-Sample_Core_Sources/
+Sample/Core/Sources/
